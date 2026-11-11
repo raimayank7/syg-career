@@ -1,0 +1,6 @@
+/* Careers: own styles on top of the shared frame */
+.cr-lead{font-size:1.08rem;color:var(--soft)}
+.cr-h{font-size:1.15rem;margin:22px 0 4px}
+.grid a{flex-wrap:wrap}.grid a small{white-space:normal;flex-basis:100%}
+.cr-grid a{flex-direction:column;align-items:flex-start;gap:4px}
+@media (min-width:900px){.nav a{padding:9px 8px;font-size:.9rem}}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://career.shareyourgroup.com/sitemap.xml
