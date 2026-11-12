@@ -1,0 +1,24 @@
+/* Interview: own styles on top of the shared frame */
+.iv-lead{font-size:1.08rem;color:var(--soft)}
+.iv-h{font-size:1.15rem;margin:22px 0 4px}
+.grid a{flex-wrap:wrap}.grid a small{white-space:normal;flex-basis:100%}
+.iv-grid a{flex-direction:column;align-items:flex-start;gap:4px}
+@media (min-width:900px){.nav a{padding:9px 8px;font-size:.9rem}}
+.btn.sm{min-height:40px}
+.ans{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 14px;margin:12px 0}
+.ans b.who{display:block;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin-bottom:4px}
+.ans p{margin:0 0 8px}
+.qa{border-bottom:1px solid var(--line);padding:6px 0 12px}
+.qa h3{margin:14px 0 6px;font-size:1.05rem}
+.qa p{margin:0}
+.msg{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0}
+.msg p{white-space:pre-line;margin:0}
+.ip{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:16px;margin:16px 0}
+.ip .chips button{min-height:42px}
+.ip-q{font:700 clamp(1.2rem,1rem + 1.4vw,1.6rem)/1.3 var(--font-head);margin:8px 0 12px}
+.ip-time{font:500 2.2rem/1 var(--mono)}
+.ip-track{height:8px;border-radius:8px;background:var(--surface2);overflow:hidden;margin:8px 0 12px}
+.ip-track i{display:block;height:100%;width:0;background:var(--accent);transition:width .25s linear}
+.ip-btns{display:flex;gap:8px;flex-wrap:wrap}
+.ip-btns .btn{min-height:46px}
+.prose b,.prose li{overflow-wrap:anywhere}

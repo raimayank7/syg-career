@@ -1,0 +1,79 @@
+/* Resume: own styles on top of the shared frame. The sheet (.rs) is always black on white, like paper. */
+.rm-lead{font-size:1.08rem;color:var(--soft)}
+.rm-h{font-size:1.15rem;margin:22px 0 4px}
+.grid a{flex-wrap:wrap}.grid a small{white-space:normal;flex-basis:100%}
+.rm-grid a{flex-direction:column;align-items:flex-start;gap:4px}
+@media (min-width:900px){.nav a{padding:9px 8px;font-size:.9rem}}
+.btn.sm{min-height:40px}
+.rb{display:grid;gap:18px;grid-template-columns:minmax(0,1fr);align-items:start;margin:14px 0}
+@media (min-width:1000px){.rb{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.rb-side{position:sticky;top:78px;max-height:calc(100vh - 90px);overflow:auto}}
+.rb fieldset{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:12px 14px 14px;margin:0 0 14px;min-width:0}
+.rb legend{font:700 1rem var(--font-head);padding:0 6px}
+.rb-grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
+.rb-f{margin:0 0 10px;min-width:0}
+.rb-f label{display:block;font-weight:600;font-size:.86rem;margin-bottom:3px}
+.rb-f input,.rb-f textarea{width:100%;font:400 16px/1.4 var(--font);padding:9px 10px;border:1px solid var(--field-line);border-radius:10px;background:var(--field);color:var(--ink);min-height:44px}
+.rb-f textarea{resize:vertical}
+.rb-item{border-top:1px dashed var(--line);padding-top:10px;margin-top:6px}
+.rb-item:first-of-type{border-top:0;padding-top:0}
+.rb-row{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px}
+.rb-bar{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;margin-bottom:10px}
+.rb-bar .chips{margin:6px 0}
+.rb-bar .chips button{min-height:40px}
+.rb-bar b{font-size:.86rem}
+.rb-sw button{width:40px;height:40px;min-height:40px;padding:0;border-radius:50%;border:3px solid var(--surface);box-shadow:0 0 0 1px var(--line)}
+.rb-sw button[aria-pressed=true]{box-shadow:0 0 0 3px var(--ink)}
+.rb-size{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.rb-size input{flex:1 1 140px;min-height:40px;accent-color:var(--accent)}
+.rb-fit{font-weight:600;font-size:.92rem;margin:8px 0 0;padding:8px 10px;border-radius:8px}
+.rb-fit.ok{background:rgba(22,163,74,.14)}.rb-fit.bad{background:rgba(220,38,38,.14)}
+.rb-acts{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.rb-acts .btn,.rb-acts label.btn{min-height:44px}
+.rb-wrap{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:6px;background:#fff}
+.rs{position:absolute;left:0;top:0;width:210mm;height:297mm;overflow:hidden;transform-origin:0 0;background:#fff;color:#111;padding:13mm 14mm;font:400 var(--rs-f,10.5pt)/1.38 Arial,Helvetica,sans-serif;--rs-c:#1d4ed8;text-align:left}
+.rs *{box-sizing:border-box}
+.rs .rs-n{font:700 2.1em/1.1 Arial,Helvetica,sans-serif;margin:0;color:#111;letter-spacing:0}
+.rs header{margin-bottom:.7em}
+.rs .rs-t{margin:.2em 0 0;font-weight:700;color:var(--rs-c)}
+.rs .rs-c{margin:.25em 0 0;font-size:.95em;color:#222}
+.rs .rs-c i{font-style:normal;color:#888;padding:0 .2em}
+.rs section{margin:0 0 .65em}
+.rs h2{font:700 1.02em/1.2 Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--rs-c);border-bottom:1px solid var(--rs-c);padding-bottom:.15em;margin:0 0 .35em}
+.rs p{margin:0 0 .25em}
+.rs ul{margin:.15em 0 .3em;padding-left:1.25em}
+.rs li{margin:0 0 .1em}
+.rs .rs-row{display:flex;gap:1em;justify-content:space-between;align-items:baseline}
+.rs .rs-p{white-space:nowrap;color:#333;font-size:.95em}
+.rs .rs-s{color:#333}
+.rs .rs-job{margin-bottom:.4em}
+.rs a{color:inherit}
+/* templates */
+.rs-modern header{background:var(--rs-c);color:#fff;margin:-13mm -14mm .9em;padding:10mm 14mm 7mm}
+.rs-modern .rs-n,.rs-modern .rs-t,.rs-modern .rs-c{color:#fff}.rs-modern .rs-c i{color:#fff;opacity:.6}
+.rs-modern h2{border-bottom:0;border-left:4px solid var(--rs-c);padding:0 0 0 .5em}
+.rs-centre header{text-align:center;border-bottom:2px solid #111;padding-bottom:.5em}
+.rs-centre h2{color:#111;border-bottom:1px solid #999}
+.rs-centre .rs-t{color:#111}
+.rm-sample{background:#fff;color:#111;border:1px solid var(--line);border-radius:8px;padding:18px 20px;margin:14px 0;font:400 .95rem/1.45 Arial,Helvetica,sans-serif;overflow-wrap:anywhere}
+.rm-sample h3{font:700 1.5rem/1.15 Arial,Helvetica,sans-serif;margin:0;color:#111}
+.rm-sample h4{font:700 .92rem/1.2 Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:#1d4ed8;border-bottom:1px solid #1d4ed8;margin:14px 0 6px;padding-bottom:2px}
+.rm-sample p{margin:0 0 4px;color:#111}.rm-sample ul{margin:2px 0 6px;padding-left:20px}.rm-sample li{color:#111;margin:0}
+.rm-sample .rs-t{font-weight:700;color:#1d4ed8;margin:3px 0 0}
+.ba{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));margin:12px 0}
+.ba>div{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--surface)}
+.ba b{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin-bottom:4px}
+.ba .no{border-left:4px solid var(--bad)}.ba .yes{border-left:4px solid var(--ok)}
+.ck{list-style:none;padding:0}
+.ck label{display:flex;gap:12px;align-items:flex-start;min-height:44px;padding:8px 0;border-bottom:1px solid var(--line)}
+.ck input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--accent)}
+.msg{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0}
+.msg p{white-space:pre-line;margin:0}
+@page{size:A4;margin:0}
+@media print{
+  body.rb-page>*:not(main),body.rb-page main>*:not(.rb-main),.rb-form-col,.rb-bar,.rb-acts,.rb-fit,.boot{display:none!important}
+  body.rb-page,body.rb-page main,.rb-main,.rb,.rb-side{display:block!important;margin:0!important;padding:0!important;max-width:none!important;position:static!important;max-height:none!important;overflow:visible!important;background:#fff!important}
+  .rb-wrap{border:0;border-radius:0;height:auto!important;overflow:visible}
+  .rs{position:static!important;transform:none!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+.ck label span{overflow-wrap:anywhere;min-width:0}
+.prose b,.prose li{overflow-wrap:anywhere}
